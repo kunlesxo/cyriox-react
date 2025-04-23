@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Navbar from "../Navbar/Navbar.jsx";
+import { Link } from "react-router-dom";
+
 // Note: You'll need to replace this with your actual video asset
 import databaseVideo from "../assets/video1.mp4"; 
 import pictures from "../assets/place hoder.png";
@@ -192,9 +194,10 @@ const First = () => {
               Streamline your business operations with our advanced database management system. 
               Track invoices, monitor transactions, and maintain complete transparency—all at zero cost.
             </p>
-            
+           
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
-              <a href="./about">
+            <Link to="./about">
+              <a href="">
                 <button className="w-full sm:w-auto px-8 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1 flex items-center justify-center">
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -202,7 +205,9 @@ const First = () => {
                   Learn More
                 </button>
               </a>
-              <a href="/wishlist">
+              </Link>
+              <Link to="/wishlist">
+              <a href="">
                 <button className="w-full sm:w-auto px-8 py-3 text-lg font-medium text-gray-800 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 transform hover:-translate-y-1 flex items-center justify-center">
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -210,6 +215,7 @@ const First = () => {
                   Get Started Free
                 </button>
               </a>
+              </Link>
             </div>
             
             <div className="mt-8 flex items-center justify-center lg:justify-start">

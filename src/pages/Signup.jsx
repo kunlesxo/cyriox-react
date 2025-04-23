@@ -173,7 +173,7 @@ const Login = () => {
           
           <form className="w-full" onSubmit={handleSubmit}>
             <motion.div variants={itemVariants} className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">Username</label>
               <input
                 type="username"
                 id="Username"
@@ -199,7 +199,7 @@ const Login = () => {
               {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
             </motion.div>
             <motion.div variants={itemVariants} className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">Password</label>
               <input
                 type="password"
                 id="password"
@@ -213,7 +213,7 @@ const Login = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="mb-4">
-              <label htmlFor="password" className="block text-sm font-medium text-gray-300 mb-1">Password</label>
+              <label htmlFor="password" className="block text-sm font-medium text-gray-300 mb-1">Confirm Password</label>
               <input
                 type="password"
                 id="password"
@@ -272,7 +272,7 @@ const Login = () => {
             <motion.div variants={itemVariants} className="mt-6 text-sm font-medium flex justify-center space-x-4">
               <a href="#" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">Forgot Password?</a>
               <span className="text-gray-500">|</span>
-              <a href="/signup" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">Already have an account? Login</a>
+              <a href="./login" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">Already have an account? Login</a>
             </motion.div>
           </form>
         </motion.div>

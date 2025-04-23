@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
+
 import { ArrowRight, CheckCircle, XCircle, BarChart3, CreditCard, Package, Users, FileText, Globe } from 'lucide-react';
 
 const MoreFeatures = () => {
@@ -105,13 +107,15 @@ const MoreFeatures = () => {
       
       <div className={`text-center mt-14 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
            style={{ transitionDelay: '800ms' }}>
+            <Link to ="./wishlist">
         <a 
-          href="./wishlist" 
+          href="" 
           className="group px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-400 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 inline-flex items-center space-x-2"
         >
           <span>Get Started Today</span>
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </a>
+        </Link>
       </div>
     </section>
   );

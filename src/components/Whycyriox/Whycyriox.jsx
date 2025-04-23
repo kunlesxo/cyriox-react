@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
+
 
 const WhyCyriox = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -95,12 +97,13 @@ const WhyCyriox = () => {
             </div>
           ))}
         </div>
-        
+        <Link to="./wishlist">
         <div className="mt-12 text-center">
           <button className="bg-indigo-600 text-white px-8 py-3 rounded-full font-medium shadow-lg transition-all duration-300 transform hover:scale-105 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
             Get Started Today
           </button>
         </div>
+        </Link>
       </div>
     </div>
   );

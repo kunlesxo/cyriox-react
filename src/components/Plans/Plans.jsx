@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Check, X, ChevronRight, Crown, Star, Building } from 'lucide-react';
+import { Link } from "react-router-dom";
+
 
 const Plans = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -102,8 +104,8 @@ const Plans = () => {
                     </div>
                   ))}
                 </div>
-                
-                <a href="./wishlist" className="block mt-8">
+                <Link to="./wishlist">
+                <a href="" className="block mt-8">
                   <button 
                     className={`w-full group flex items-center justify-center space-x-2 py-3 rounded-lg transition-all duration-300
                       ${plan.popular 
@@ -114,6 +116,7 @@ const Plans = () => {
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </a>
+                </Link>
               </div>
             </div>
           ))}
