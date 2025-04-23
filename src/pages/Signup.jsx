@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -270,9 +272,13 @@ const Login = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="mt-6 text-sm font-medium flex justify-center space-x-4">
+           
               <a href="#" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">Forgot Password?</a>
               <span className="text-gray-500">|</span>
-              <a href="./login" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">Already have an account? Login</a>
+               <Link to="./login" >
+             
+              <a href="" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">Already have an account? Login</a>
+           </Link>
             </motion.div>
           </form>
         </motion.div>
